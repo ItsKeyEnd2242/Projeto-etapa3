@@ -1,5 +1,9 @@
 /* Você pode manter os mesmos estilos do cadastro.css ou criar estilos específicos se desejar */
+body{
+    background-color: #894141;
+}
 .container {
+    border: solid 2px black;
     max-width: 400px;
     margin: 50px auto;
     background-color: white;

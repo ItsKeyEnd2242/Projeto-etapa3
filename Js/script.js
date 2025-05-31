@@ -2,10 +2,13 @@ const listaProdutosDiv = document.querySelector('.lista-produtos');
 const carrinhoLink = document.querySelector('nav a:last-child');
 let carrinho = [];
 
+let imagem1 = document.createElement('img');
+imagem1.src = 'imgs/mesa1.jpeg';
 const produtos = [
-    { id: 1, nome: 'Camiseta Confortável', preco: 25.99, imagem: 'camiseta.jpg' },
-    { id: 2, nome: 'Calça Jeans Moderna', preco: 79.90, imagem: 'calca.jpg' },
-    { id: 3, nome: 'Tênis Esportivo', preco: 120.50, imagem: 'tenis.jpg' },
+    { id: 1, nome: 'Mesa Rustica', preco: 25.99 },
+    { id: 2, nome: 'Mesa com Bancos', preco: 79.90 },
+    { id: 3, nome: 'Mesas curtas', preco: 120.50 },
+    { id: 3, nome: 'Mesas curtas', preco: 120.50 },
     // Adicione mais produtos aqui
 ];
 
@@ -14,7 +17,7 @@ function exibirProdutos() {
         const produtoDiv = document.createElement('div');
         produtoDiv.classList.add('produto');
         produtoDiv.innerHTML = `
-            <img src="${produto.imagem}" alt="${produto.nome}">
+            <img src="/imgs/mesa1.jpeg" alt="${produto.nome}">
             <h3>${produto.nome}</h3>
             <p class="preco">R$ ${produto.preco.toFixed(2)}</p>
             <button data-id="${produto.id}">Adicionar ao Carrinho</button>
@@ -41,7 +44,6 @@ function adicionarAoCarrinho(event) {
 function atualizarCarrinho() {
     carrinhoLink.textContent = `Carrinho (${carrinho.length})`;
     console.log('Itens no carrinho:', carrinho); // Apenas para demonstração
-    // Em um cenário real, você exibiria os itens do carrinho em uma página separada ou modal.
 }
 
 // Certifique-se de ter as imagens (camiseta.jpg, calca.jpg, tenis.jpg) na mesma pasta do seu HTML

@@ -1,3 +1,6 @@
+body{
+    background-color: #894141;
+}
 .container {
     max-width: 400px;
     margin: 50px auto;
@@ -78,6 +81,6 @@ a:hover {
 
 .mensagem.erro {
     background-color: #f8d7da;
-    color: #721c24;
+    color: #894141;
     border: 1px solid #f5c6cb;
 }

@@ -1,13 +1,20 @@
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    box-sizing: border-box;
 }
-
+.logo{
+    height:160px;
+    width: 160px;
+}
 header {
-    background-color: #333;
+    display: flex;
+    justify-content: center;
+    background-color: #894141;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -46,7 +53,7 @@ main {
 
 .produto {
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -82,8 +89,14 @@ main {
     background-color: #0056b3;
 }
 
+.footer-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
-    background-color: #333;
+    background-color: #894141;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -91,3 +104,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
